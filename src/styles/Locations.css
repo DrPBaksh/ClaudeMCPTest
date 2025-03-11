@@ -1,0 +1,263 @@
+.locations-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.page-hero {
+  height: 50vh;
+  min-height: 300px;
+  position: relative;
+  background: linear-gradient(to right, #1d3557, #457b9d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.page-hero-content {
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+  animation: fadeIn 1.5s ease-out;
+  max-width: 800px;
+}
+
+.page-hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  animation: slideUp 1.2s ease-out;
+}
+
+.page-hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  animation: slideUp 1.4s ease-out;
+}
+
+.locations-content {
+  padding: 60px 0;
+}
+
+.intro-section {
+  margin-bottom: 50px;
+}
+
+.intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1d3557;
+}
+
+.intro-content p {
+  color: #495057;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.filters-section {
+  margin-bottom: 40px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #dee2e6;
+}
+
+.filter-btn.active {
+  background-color: #1d3557;
+  color: white;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.location-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.location-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.location-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.location-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.location-card:hover .location-image img {
+  transform: scale(1.05);
+}
+
+.location-country {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(29, 53, 87, 0.8);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.location-details {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.location-details h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1d3557;
+  font-family: 'Playfair Display', serif;
+}
+
+.location-description {
+  margin-bottom: 20px;
+  color: #495057;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.location-features {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.feature:last-child {
+  margin-bottom: 0;
+}
+
+.feature-label {
+  font-weight: 600;
+  color: #1d3557;
+}
+
+.feature-value {
+  color: #457b9d;
+}
+
+.location-btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.location-cta {
+  background-color: #e9ecef;
+  border-radius: 10px;
+  padding: 60px 40px;
+  margin-top: 30px;
+}
+
+.location-cta .cta-content {
+  text-align: center;
+}
+
+.location-cta h2 {
+  color: #1d3557;
+}
+
+.location-cta p {
+  color: #495057;
+}
+
+.location-cta .btn {
+  background-color: #1d3557;
+  color: white;
+}
+
+.location-cta .btn:hover {
+  background-color: #457b9d;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .page-hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .locations-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .page-hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .intro-content h2 {
+    font-size: 2rem;
+  }
+  
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .location-cta {
+    padding: 40px 20px;
+  }
+}
