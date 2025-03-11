@@ -1,0 +1,124 @@
+.mountain-list-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.page-hero {
+  height: 50vh;
+  min-height: 300px;
+  position: relative;
+  background: linear-gradient(to right, #1d3557, #457b9d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.page-hero-content {
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+  animation: fadeIn 1.5s ease-out;
+  max-width: 800px;
+}
+
+.page-hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  animation: slideUp 1.2s ease-out;
+}
+
+.page-hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  animation: slideUp 1.4s ease-out;
+}
+
+.mountain-list-content {
+  padding: 80px 0;
+}
+
+.filters-section {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #1d3557;
+  text-align: center;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #dee2e6;
+}
+
+.filter-btn.active {
+  background-color: #1d3557;
+  color: white;
+}
+
+.mountains-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.mountain-item {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .page-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .page-hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .filters-section h2 {
+    font-size: 2rem;
+  }
+  
+  .filter-buttons {
+    gap: 10px;
+  }
+  
+  .filter-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .mountains-grid {
+    grid-template-columns: 1fr;
+  }
+}

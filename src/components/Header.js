@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,14 +27,14 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
         <div className="logo-container">
-          <a href="/" className="logo">MountainApp</a>
+          <Link to="/" className="logo">MountainApp</Link>
           <span className="logo-tagline">Claude MCP</span>
         </div>
 
         <nav className={`navigation ${isMobileMenuOpen ? 'open' : ''}`}>
           <ul className="nav-list">
-            <li className="nav-item"><a href="#">Home</a></li>
-            <li className="nav-item"><a href="#">Mountains</a></li>
+            <li className="nav-item"><Link to="/">Home</Link></li>
+            <li className="nav-item"><Link to="/mountains">Mountains</Link></li>
             <li className="nav-item"><a href="#">Experiences</a></li>
             <li className="nav-item"><a href="#">About</a></li>
             <li className="nav-item"><a href="#">Contact</a></li>
