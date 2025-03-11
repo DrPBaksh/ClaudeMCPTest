@@ -27,17 +27,18 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
         <div className="logo-container">
-          <Link to="/" className="logo">MountainApp</Link>
-          <span className="logo-tagline">Claude MCP</span>
+          <Link to="/" className="logo">AlpineLiving</Link>
+          <span className="logo-tagline">Your Mountain Relocation Experts</span>
         </div>
 
         <nav className={`navigation ${isMobileMenuOpen ? 'open' : ''}`}>
           <ul className="nav-list">
             <li className="nav-item"><Link to="/">Home</Link></li>
-            <li className="nav-item"><Link to="/mountains">Mountains</Link></li>
-            <li className="nav-item"><a href="#">Experiences</a></li>
-            <li className="nav-item"><a href="#">About</a></li>
-            <li className="nav-item"><a href="#">Contact</a></li>
+            <li className="nav-item"><Link to="/locations">Locations</Link></li>
+            <li className="nav-item"><Link to="/services">Services</Link></li>
+            <li className="nav-item"><Link to="/resources">Resources</Link></li>
+            <li className="nav-item"><Link to="/about">About</Link></li>
+            <li className="nav-item"><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
 
