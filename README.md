@@ -1,55 +1,57 @@
-# Claude MCP Test - Mountain Snow React App
+# Alpine Living - Mountain Relocation Web Application
 
 ## Overview
-This repository contains a professionally styled React application with a mountain and snow theme, showcasing the capabilities of Claude's Model Context Protocol (MCP). The application features stunning visuals, smooth animations, and responsive design - all produced entirely through Claude's MCP.
+This repository contains a professionally designed React application focused on promoting relocation to the Alps. The application provides comprehensive information about moving to Alpine regions, showcasing different locations, explaining visa requirements, and offering resources for prospective residents. All content was created using Claude's Model Context Protocol (MCP).
 
 ## Features
 
-- **Stunning Mountain/Snow Theme**: Beautiful imagery with parallax effects
-- **Stylish Animations**: Including snowfall, fade-ins, and hover effects
-- **Fully Responsive Design**: Looks great on all devices from mobile to desktop
-- **Modern React Architecture**: Component-based structure following best practices
-- **Professional UI Elements**: Elegant navigation, cards, and interactive components
-- **Multi-page Application**: Home page and Mountains listing with filtering capabilities
+- **Stunning Mountain/Snow Theme**: Beautiful imagery with parallax effects and animated snowfall
+- **Multiple Content Pages**: Home, Locations, and Resources pages with detailed information
+- **Interactive Elements**: Tabbed interfaces, filtering capabilities, and responsive cards
+- **Relocation Resources**: Comprehensive guides for different Alpine countries
+- **Mobile-Responsive Design**: Looks great on all devices from mobile to desktop
 
-## Live Demo
-Once deployed, the application will be available at: [Your deployment URL]
+## Purpose
+This application serves as a promotional and informational platform for individuals considering relocating to Alpine regions. It highlights:
 
-## Screenshots
-[Coming soon]
+1. **Quality of Life Benefits**: How mountain living can improve wellbeing and lifestyle
+2. **Practical Information**: Visa requirements, housing options, healthcare, and more
+3. **Location Comparisons**: Details on different Alpine regions across multiple countries
+4. **Remote Work Resources**: Information for digital nomads and remote workers
 
-## How It Was Built
-This entire application was created through Claude's Model Context Protocol without manual coding. Claude was able to:
+## Pages
 
-1. Generate the complete file structure for a React application
-2. Create HTML, CSS, and JavaScript files with professional styling
-3. Implement animations and interactive elements
-4. Apply responsive design principles
-5. Organize code following modern React best practices
-6. Set up routing between multiple pages
+### Home Page
+The landing page showcases the benefits of Alpine living with:
+- Hero section with parallax mountain background and animated snowfall
+- Key benefits of relocating to the Alps
+- Featured testimonials from those who have made the move
+- Call-to-action for personalized consultations
 
-## Project Structure
-```
-/
-├── public/               # Static files
-├── src/                  # Source files
-│   ├── components/       # Reusable React components
-│   │   ├── Footer.js
-│   │   ├── Header.js
-│   │   ├── MountainCard.js
-│   │   └── SnowEffect.js
-│   ├── pages/            # Page components
-│   │   ├── Home.js
-│   │   └── MountainList.js
-│   ├── styles/           # CSS files
-│   ├── App.js            # Main app component with routing
-│   └── index.js          # Entry point
-├── package.json          # Project dependencies
-├── .gitignore           # Git ignore file
-├── .eslintrc.json       # ESLint configuration
-├── .prettierrc          # Prettier configuration
-└── README.md            # Documentation
-```
+### Locations Page
+A comprehensive guide to popular Alpine destinations:
+- Filterable list of locations across different countries
+- Detailed information cards for each location
+- Key data on internet speeds, cost of living, and expat communities
+- Beautiful imagery of each destination
+
+### Resources Page
+Extensive information on every aspect of relocation:
+- Tabbed interface for easy navigation between topics
+- Country-specific relocation guides
+- Visa and residency information
+- Remote work considerations
+- Housing options and buying tips
+- Healthcare systems comparison
+- Frequently asked questions
+
+## Technical Implementation
+
+- **React Framework**: Modern component-based architecture
+- **React Router**: Seamless navigation between pages
+- **CSS Animations**: Smooth transitions and effects
+- **Responsive Design**: Adapts to all screen sizes
+- **SVG Integration**: Country flags and icons
 
 ## Installation & Usage
 
@@ -74,21 +76,6 @@ npm start
 ```
 
 5. Open your browser and visit `http://localhost:3000`
-
-## Features
-
-### Home Page
-- Stunning hero section with mountain background
-- Animated snowfall effect
-- Parallax scrolling
-- Feature cards highlighting mountain experiences
-- Professional navigation and footer
-
-### Mountains Page
-- Filterable list of mountain destinations
-- Beautiful cards with hover effects
-- Difficulty badges with color coding
-- Responsive grid layout
 
 ## License
 MIT
