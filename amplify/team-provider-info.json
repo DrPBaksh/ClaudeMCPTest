@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-claudemountains-dev-3d495-authRole",
+      "UnauthRoleArn": "arn:aws:iam::338971307797:role/amplify-claudemountains-dev-3d495-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::338971307797:role/amplify-claudemountains-dev-3d495-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-claudemountains-dev-3d495-deployment",
+      "UnauthRoleName": "amplify-claudemountains-dev-3d495-unauthRole",
+      "StackName": "amplify-claudemountains-dev-3d495",
+      "StackId": "arn:aws:cloudformation:us-east-1:338971307797:stack/amplify-claudemountains-dev-3d495/423d5610-fe66-11ef-89f2-0edbce42571f",
+      "AmplifyAppId": "d1i7zyfwswchcq"
+    },
+    "categories": {
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  }
+}
